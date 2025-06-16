@@ -1,0 +1,357 @@
+{
+	"info": {
+		"_postman_id": "93e27ccd-2468-4ad6-b849-3374e3ba609b",
+		"name": "crud-auth",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "40611546"
+	},
+	"item": [
+		{
+			"name": "register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"abdullah\",\r\n  \"email\": \"abdullah@mail.com\",\r\n  \"password\": \"123456\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/api/login",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"bulbul@gmail.com\",\r\n  \"password\": \"123456\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/api/users/1",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTAsImVtYWlsIjoiYWJkdWxsYWhAbWFpbC5jb20iLCJpYXQiOjE3NDgxNjA1NzEsImV4cCI6MTc0ODI0Njk3MX0.n_3drKLJRsHgD8sK8wn7jqkE8TBEk8Y0_DInyDXxXHc",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "\r\n{\r\n  \"name\": \"bula\",\r\n  \"email\": \"bulbul@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/users/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"users",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/api/users/1",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTAsImVtYWlsIjoiYWJkdWxsYWhAbWFpbC5jb20iLCJpYXQiOjE3NDgxNjA1NzEsImV4cCI6MTc0ODI0Njk3MX0.n_3drKLJRsHgD8sK8wn7jqkE8TBEk8Y0_DInyDXxXHc",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/api/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/api/users/2",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywiZW1haWwiOiJhZHVsQG1haWwuY29tIiwiaWF0IjoxNzQ2MDE4NTc3LCJleHAiOjE3NDYxMDQ5Nzd9.T59sq9_Rw_e3rC2jYZk2lpcaBviU4-BjWXWFG5N7c1I",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/api/users/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"users",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create product",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwiZW1haWwiOiJzYWxzYUBnbWFpbC5jb20iLCJpYXQiOjE3NDYwMzE0MzQsImV4cCI6MTc0NjExNzgzNH0.GpCIJDzQV4gT7tgeqMZ9OV3ZMR9DFnkOfEGWxPUIunA",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"user_id\": \"10\",\r\n  \"nama_produk\": \"basreng\",\r\n  \"kategori\": \"makanan\",\r\n  \"negara_asal\": \"belanda\",\r\n  \"biaya_impor\": \"200000\",\r\n  \"harga\": \"200000\",\r\n  \"stok\": \"2\",\r\n  \"created_at\": \"06-04-2026\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/import_products",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"import_products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "read ",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywiZW1haWwiOiJidWxidWxAZ21haWwuY29tIiwiaWF0IjoxNzUwMDg0MzEyLCJleHAiOjE3NTAxNzA3MTJ9.I9l4KM9ymPsFhAHnY1aWy21Ta6TNDeN2TsrY9RpDdgM",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/api/import_products",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"import_products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywiZW1haWwiOiJhZHVsQG1haWwuY29tIiwiaWF0IjoxNzQ2MDE4NTc3LCJleHAiOjE3NDYxMDQ5Nzd9.T59sq9_Rw_e3rC2jYZk2lpcaBviU4-BjWXWFG5N7c1I",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"user_id\": \"9\",\r\n  \"nama_produk\": \"seblak\",\r\n  \"kategori\": \"camilan\",\r\n  \"negara_asal\": \"india\",\r\n  \"biaya_impor\": \"10000\",\r\n  \"harga\": \"600000\",\r\n  \"stok\": \"10\",\r\n  \"created_at\": \"NOW()\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/import_products/7",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"import_products",
+						"7"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywiZW1haWwiOiJhZHVsQG1haWwuY29tIiwiaWF0IjoxNzQ2MDE4NTc3LCJleHAiOjE3NDYxMDQ5Nzd9.T59sq9_Rw_e3rC2jYZk2lpcaBviU4-BjWXWFG5N7c1I",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/api/import_products/7",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"import_products",
+						"7"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "lihat foto",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/uploads/1748177163830.png",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"uploads",
+						"1748177163830.png"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "upload foto",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywiZW1haWwiOiJidWxidWxAZ21haWwuY29tIiwiaWF0IjoxNzQ4MjcwMjUxLCJleHAiOjE3NDgzNTY2NTF9.HgUie4ceymGTGR7Fk_V_2Ip3sTHsXB6JnGvTU1KrmtM",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "cina",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "cina@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "photo",
+							"type": "file",
+							"src": "/C:/Users/USER/OneDrive/Pictures/Saved Pictures/bg.jpg"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/users/11",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"users",
+						"11"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
